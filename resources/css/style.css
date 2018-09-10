@@ -117,7 +117,6 @@ h3 {
     color: #e67e22;
     font-size: 120%;
     margin-right: 10px;
-
     /* Alliging text/icons */
     line-height: 120%;
     vertical-align: middle;
@@ -126,7 +125,7 @@ h3 {
 
 /* BUTTONS */
 
-.btn:link, .btn:visited {
+.btn:link, .btn:visited, input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -136,11 +135,12 @@ h3 {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn:hover, .btn:active {
+.btn:hover, .btn:active, input[type=submit]:hover, input[type=submit]:active {
     background-color: #cf6d17;
+    cursor: pointer;
 }
 
-.btn-full:link, .btn-full:visited {
+.btn-full:link, .btn-full:visited, input[type=submit] {
     background-color: #e67e22;
     color: #fff;
     margin-right: 15px;
@@ -161,8 +161,7 @@ h3 {
 
 /* LINKS */
 
-.city-feature a:link,
-.city-feature a:visited {
+.city-feature a:link, .city-feature a:visited {
     color: #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
@@ -170,8 +169,7 @@ h3 {
     transition: border-bottom 0.2s, color 0.2s;
 }
 
-.city-feature a:hover,
-.city-feature a:active {
+.city-feature a:hover, .city-feature a:active {
     color: #555;
     border-bottom: 1px solid transparent;
 }
@@ -429,4 +427,30 @@ cite img {
 
 .plan-box ul li {
     padding: 5px 0;
+}
+
+/* SIGNUP FORM */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
 }
