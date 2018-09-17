@@ -222,6 +222,14 @@ header {
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+
 .main-nav {
     float: right;
     list-style: none;
@@ -247,6 +255,35 @@ header {
 .main-nav li a:hover,
 .main-nav li a:visited {
     border-bottom: 2px solid #e67e22;
+}
+
+.sticky {
+    background: rgba(248, 248, 248, 0.95);
+    color: #555;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px #f4f4f4;
+    font-size: 90%;
+}
+
+.sticky .main-nav {
+    margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 8px 0;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+.sticky .logo {
+    display: none;
 }
 
 /* FEATURES */
