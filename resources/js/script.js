@@ -11,5 +11,6 @@ const waypoint = new Waypoint({
     } else {
       navbar.classList.remove('sticky')
     }
-  }
+  }, 
+  offset: '80px'
 })
